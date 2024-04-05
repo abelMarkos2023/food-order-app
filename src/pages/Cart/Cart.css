@@ -1,0 +1,127 @@
+.cart{
+    margin-top: 6rem;
+}
+
+.cart-items-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr .5fr .5fr;
+    align-items: center;
+    grid-gap: 1rem;
+    row-gap: 1rem;
+    color: gray;
+    font-size: max(1.5vw, 1rem);
+}
+.cart-items-item{
+    margin-top: 1rem;
+}
+.cart-items-item img{
+    width: 70%;
+}
+.cart hr {
+    width: 100%;
+    border: none;
+    height: 1px;
+    background-color: gray;
+    margin-top: 0.5rem;
+}
+.cart-items-item .cross{
+    cursor: pointer;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 50%;
+}
+.cart-bottom{
+    margin-top: 4rem;
+   display: grid;
+   grid-template-columns: 2fr 1fr;
+   gap: 1rem;
+   
+}
+.cart-totals{
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+    background-color: teal;
+    padding: 1.2rem;
+    border-radius: 1.2rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, .6);
+
+}
+.cart-totals h2{
+    font-size: 1.4rem;
+    background-color: teal;
+    color: azure;
+    padding: 1.2rem;
+    border-radius: 1rem;
+}
+.cart-totals hr{
+    border: none;
+    height: 2px;
+    background-color: white;
+}
+.checkout-btn{
+    padding: 1rem 1.2rem;
+    border: none;
+    border-radius: 1rem;
+    color: azure;
+    background-color: tomato;
+    cursor: pointer;
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    text-transform: capitalize;
+
+}
+.cart-totals-details{
+display: flex;
+align-items: center;
+justify-content: space-between;
+color: azure;
+font-size: 1.2rem;
+}
+.cart-promocode{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 1.2rem;
+    background-color: orange;
+    color: beige;
+    border-radius: 1.5rem;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, .6);
+}
+.cart-promocode-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+
+}
+.cart-promocode-input {
+    background-color: white;
+    border-radius: 1rem;
+}
+.cart-promocode-input input{
+    width: 100%;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.2rem;
+
+    border-radius: 1rem;
+}
+.cart-promocode-input input:focus{
+    outline: none;
+}
+.promocode-btn{
+    padding: 1rem 1.2rem;
+    border-radius: 1rem;
+    border: none;
+    cursor: pointer;
+    background-color: teal;
+    color: white;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+
+@media (width <= 46rem){
+    .cart-bottom{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}

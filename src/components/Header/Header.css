@@ -1,0 +1,75 @@
+.header{
+    height: 34vw;
+    position: relative;
+    margin: 2rem auto;
+    background: url('/header_img.png') no-repeat;
+    background-size: contain;
+}
+.header-contents{
+    position: absolute;
+    padding: 0.5rem 0; 
+    bottom: 10%;
+    left: 2%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5vw;
+    align-items: flex-start;
+    animation: fadein 4s;
+}
+.header-contents h2{
+    font-weight: 500;
+    color: white;
+    font-size: max(4.5vw,1.5rem);
+
+}
+.header-contents p{
+    font-size: 1.4vw;
+    color: wheat;
+    font-weight: 400;
+    line-height: 1.8;
+}
+.header-contents button{
+    border: none;
+    padding: 1rem 2rem;
+    color: #747474;
+    background-color: white;
+    font-size: 1rem;
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 400;
+    text-transform: capitalize;
+    transition:all 300ms ease;
+}
+.header-contents button:hover{
+opacity: .8;
+}
+
+@media (width <= 65rem){
+    .header{
+        height: 38vw;
+        width: 100%;
+        background-size: cover;
+    }
+    .header-contents{
+        width: 45%;
+    }
+}
+@media (width <= 47rem ){
+    .header{
+        height: 40vw;
+    }
+    .header-contents{
+        width: 55%;
+        /* align-items: center; */
+        justify-content: center;
+        bottom: 0;
+        top: 0;
+    }
+    .header-contents p {
+        display: none;
+    }
+    .header-contents button {
+        padding: 2vw 4vw;
+    }
+}

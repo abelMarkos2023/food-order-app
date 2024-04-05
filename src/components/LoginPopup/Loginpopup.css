@@ -1,0 +1,92 @@
+.popup{
+    position: absolute;
+    inset: 0;
+    z-index: 999;
+    background-color: rgba(0,0,0,0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.popup-content{
+    padding: 1.25rem;
+    
+    width: 60%;
+    margin: auto;
+    background-color:rgba(255,255,255,0.4);
+}
+.popup-title{
+    margin-bottom: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.popup-title h2{
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: tomato;
+}
+.popup-title img{
+    width: 1.8rem;
+    height: 1.8rem;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.popup-form{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    transition: all 400ms ease-in-out;
+}
+.popup-full-name{
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+}
+.form-control{
+    width: 100%;
+    padding: .8rem 2rem;
+    border-radius: .8rem;
+    border: none;
+    font-size: 1rem;
+}
+.form-control:focus{
+    outline: none;
+}
+.popup-pass-con{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.popup-btn{
+    padding: 0.8rem 1.6rem;
+    align-self: flex-start;
+    border-radius: .75rem;
+    border: none;
+    color: white;
+    background-color: #494949;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.popup-login, .popup-sign-up{
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+.popup-login span, .popup-sign-up span{
+    display: inline-block;
+    margin-left: 0.5rem;
+    cursor: pointer;
+    color: rgb(123, 3, 3);
+    font-size: 1.4rem;
+}
+@media (width <= 47rem){
+    .popup-content{
+        width: 80%;
+    }
+    
+}
+@media (width <= 37rem){
+    .popup-full-name{
+        flex-direction: column;
+    }
+}
